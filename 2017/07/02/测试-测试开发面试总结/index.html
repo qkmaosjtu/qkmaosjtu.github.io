@@ -45,8 +45,74 @@
 <li>……</li>
 </ul>
 <p>这样的题目相对简单，基本考察的都是测试用例设计能力。基本按照模块、功能、需求、抗压等思路去设计用例即可。详细的答案大家直接求助网路就好了，这里就不复制粘贴了。</p>
-<h2 id="初级：计算机基本知识"><a href="#初级：计算机基本知识" class="headerlink" title="初级：计算机基本知识"></a>初级：计算机基本知识</h2><p>（待更新……）</p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://lovetostudy.me/2017/07/02/测试-测试开发面试总结/" data-id="cj4mwmaeg00020wohqo0u02ts" class="article-share-link">分享</a><div class="tags"><a href="/tags/测试/">测试</a><a href="/tags/测试开发/">测试开发</a><a href="/tags/面试/">面试</a></div><div class="post-nav"><a href="/2017/06/06/Hello/" class="next">APNsPy</a></div><div id="container"></div><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>var gitment = new Gitment({
+<h2 id="初级：计算机基本知识"><a href="#初级：计算机基本知识" class="headerlink" title="初级：计算机基本知识"></a>初级：计算机基本知识</h2><p>这类的问题基本上考察的是应聘者的计算机基础，总体感觉不难。主要要看应聘的公司对该岗位的要求和对面试者的定位。我把我遇到的题目主要总结为这几类：</p>
+<ul>
+<li>语言基础知识：C++的多态，Java虚拟机，Python的深拷贝与浅拷贝。总的来说就是简历上写的熟悉的语言的基础题；</li>
+<li>计算机网络：这类问题在应聘服务端测试的时候居多。例如TCP/HTTP原理，HTTPS与HTTP的区别，IP地址的分类，TCP与UDP的区别以及常见状态码等；</li>
+<li>数据库：数据库范式，简单的命令，主键与外健，内联结等；</li>
+</ul>
+<p>这些问题可以说是校招划水水平，不过我好多都忘了还觉得社招这些东西不会被问到，这恰恰是我们准备测试开发面试的盲区，测试开发还是需要应聘者有着扎实的计算机基础。不过问题不难，基本上百度“<strong>*</strong>的常见面试题“都可以搜的到。</p>
+<h2 id="中级：编程题以及情景设计题"><a href="#中级：编程题以及情景设计题" class="headerlink" title="中级：编程题以及情景设计题"></a>中级：编程题以及情景设计题</h2><h3 id="编程题："><a href="#编程题：" class="headerlink" title="编程题："></a>编程题：</h3><p>测试开发岗位要求从业者有着扎实的编码能力，未来测试开发的主要工作将从功能测试转移到专项和工具及平台的研发，编码的工作是不可或缺的。我遇到的问题能回忆起来的有这么几类：</p>
+<ul>
+<li>基础类：</li>
+</ul>
+<ol>
+<li>常见排序算法</li>
+<li>算法复杂度</li>
+<li>树的遍历，递归非递归，深度优先和广度优先</li>
+<li>链表题考到的最多：链表反转，环相关问题，删除中间元素等</li>
+<li>等；</li>
+</ol>
+<ul>
+<li>字符串处理：</li>
+</ul>
+<ol>
+<li>字符串反转</li>
+<li>文本的规范化（首字母大写，单词规范化）</li>
+<li>关键字查找及过滤</li>
+<li>等；</li>
+</ol>
+<ul>
+<li>综合编程题：<br>大都记不太清，会稍微有点难度，部分题目在LeetCode上也见到过，如经典的<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/description/" target="_blank" rel="external">Longest Substring Without Repeating Characters</a>。说真的，如果想拿到大厂或者新生代互联网公司的offer，题还是要刷的。这里分享我的个人经验，一般Python答起来会更轻松点，常见的面试题很多都是很有技巧性的，而Python在临场发挥时应对这些问题都比较简单。但是有些问题用Python就不够简洁，比如说Python严格来说是没有树和栈这些结构的。</li>
+</ul>
+<p>总的来说编程题都不是太难，最好是Java/C++和Python都熟练，这样应对大多数的题目绰绰有余。</p>
+<h3 id="情景设计题"><a href="#情景设计题" class="headerlink" title="情景设计题"></a>情景设计题</h3><p>这类的题目会跟前面提到的很多问题相结合，考察知识的全面性，这里就直接列出来我遇到的问题吧，你们可以认真感受下每个问题背后潜藏的考察点：</p>
+<ul>
+<li>代码实现，判断IP的合法性</li>
+<li>输入到浏览器一个地址，到观察到页面这个过程中都发生了什么<br>这道题目很容易漏掉Cookie，也很容易漏掉该页面需要权限或者登陆的情况</li>
+<li>如何测试一个IM系统</li>
+<li>如何测试一个多线程安全的日志类库</li>
+<li>对一个SDK网络协议接口进行升级，写出所有的测试用例<br>……</li>
+</ul>
+<p>由于时间太过久远，很多题目都不太记得了。总的来说，情景设计题目的特点是整个情景考察的知识点多而全面，并且相互之间联系紧密，考察的是测试开发人员的知识全面性和考虑问题的全面性，所以归到了高级题目。</p>
+<h2 id="高级：测试专项，术业有专攻"><a href="#高级：测试专项，术业有专攻" class="headerlink" title="高级：测试专项，术业有专攻"></a>高级：测试专项，术业有专攻</h2><p>高级的题目主要集中在某个测试的专项上。正如前文所说的那样，未来的很大一部分测试工作，将会由开发人员承担，而测试开发工程师主要集中在平台开发和测试专项，所以面试最难的地方就是测试专项。不是说题目更难，而是考察的更深。因为我的经验主要集中在iOS和Web自动化，所以这块儿被问到的最多。</p>
+<ul>
+<li>iOS</li>
+</ul>
+<ol>
+<li>View和Viewcontroller的生命周期</li>
+<li>ARC和RC的区别</li>
+<li>Instruments测试内存泄漏</li>
+<li>EXC_BAD_ACCESS</li>
+<li>Xcode调试</li>
+<li>iOS证书</li>
+<li>APNs各个版本的区别<br>……</li>
+</ol>
+<ul>
+<li>Web</li>
+</ul>
+<ol>
+<li>说出几个Web自动化测试工具以及区别<br>……</li>
+</ol>
+<ul>
+<li>自动化测试</li>
+</ul>
+<ol>
+<li>讲下做过的自动化测试的项目以及自己在框架中做的工作（甚至有公司还问了我某个函数怎么调用…)</li>
+<li>列出几个移动端自动化测试框架，给一个项目，结合项目内容以及团队组成对框架进行选型<br>……</li>
+</ol>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>基本上到这里算是把两个月以来的面试总结了一波，希望能够让更多的人了解到测试开发的新要求和未来发展。两个月过去了，很多题目暂时回忆不起来，这篇文章长期更新，希望大家可以多多交流。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://lovetostudy.me/2017/07/02/测试-测试开发面试总结/" data-id="cj6kv1r8k0002fnohdu9kxho2" class="article-share-link">分享</a><div class="tags"><a href="/tags/测试/">测试</a><a href="/tags/测试开发/">测试开发</a><a href="/tags/面试/">面试</a></div><div class="post-nav"><a href="/2017/06/06/Hello/" class="next">APNsPy</a></div><div id="container"></div><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>var gitment = new Gitment({
   owner: 'qkmaosjtu',
   repo: 'gitment',
   oauth: {
